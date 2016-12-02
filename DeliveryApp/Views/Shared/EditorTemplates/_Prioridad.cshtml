@@ -1,0 +1,17 @@
+﻿@(Html.Kendo().DropDownList()
+          .Name("visi_status")
+          .DataTextField("Text")
+          .DataValueField("Value")
+          .BindTo(new List<SelectListItem>() {
+              new SelectListItem() {
+                  Text = "Sin Prioridad",
+                  Value = "0"
+              },
+              new SelectListItem() {
+                  Text = "Proridad",
+                  Value = "1"
+              }
+          })
+          .HtmlAttributes(new { style = "width: 200px" })
+)
+

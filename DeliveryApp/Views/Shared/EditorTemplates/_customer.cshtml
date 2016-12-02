@@ -1,0 +1,16 @@
+﻿
+@(Html.Kendo().DropDownList()
+             .Name("cust_id")
+             .HtmlAttributes(new { style = "width:200px" })
+            .OptionLabel("Clientes...")
+             .DataTextField("cust_name")
+             .DataValueField("cust_id")
+             .DataSource(source =>
+             {
+                 source.Read(read =>
+                 {
+                     read.Action("GetCustomer", "AssignRoute");
+                 });
+             })
+
+)
