@@ -1,0 +1,126 @@
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\ApplicationInsights.config
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\DeliveryApp.dll.config
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\DeliveryApp.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\DeliveryApp.pdb
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Antlr3.Runtime.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\EntityFramework.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\GoogleMaps.LocationServices.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Kendo.Mvc.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.Web.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Newtonsoft.Json.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Helpers.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Mvc.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Optimization.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Razor.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\WebGrease.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Antlr3.Runtime.pdb
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\EntityFramework.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Kendo.Mvc.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.Web.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\Newtonsoft.Json.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Helpers.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Mvc.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Optimization.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.Razor.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\cs-CZ\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\da-DK\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\de-DE\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\es-ES\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\fr-CA\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\it-IT\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\sk-SK\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\tr-TR\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.dll
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.pdb
+C:\Users\Miguel Mendez\Documents\Visual Studio 2015\AppDT\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\ApplicationInsights.config
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\DeliveryApp.dll.config
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\DeliveryApp.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\DeliveryApp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Antlr3.Runtime.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\EntityFramework.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\GoogleMaps.LocationServices.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Kendo.Mvc.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.Web.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Newtonsoft.Json.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Helpers.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Mvc.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Optimization.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Razor.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\WebGrease.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Antlr3.Runtime.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\EntityFramework.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Kendo.Mvc.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.Web.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\Newtonsoft.Json.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Helpers.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Mvc.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Optimization.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.Razor.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\bg-BG\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\cs-CZ\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\da-DK\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\de-DE\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\es-ES\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\fr-CA\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\fr-FR\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\it-IT\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\nl-NL\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\pl-PL\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\pt-BR\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\pt-PT\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\ro-RO\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\ru-RU\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\sk-SK\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\sv-SE\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\tr-TR\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\uk-UA\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.dll
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\obj\Debug\DeliveryApp.csprojResolveAssemblyReference.cache

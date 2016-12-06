@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="84bd9d8625a04691bde837fa84e493fe" Name="Diagram1">
+        <EntityTypeShape EntityType="AppDTModel.CUSTOMER" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.GETSURVEY" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.INSTALLER" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.NOTVISIT" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.PAQUETE" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.PAQUETE_DETALLE" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.PRODUCTO" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.RETURN" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.SURVEY" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.SURVEY_CUESTION" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.SURVEY_CUESTION_ANSWARE" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.SURVEY_CUESTION_OP" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.USUARIO" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.VISITA_ASSIGN" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.VISITA_IMAGE_NEW" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.VISITA_REGISTRO" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.vis_Assigned_Visit" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.vis_survey" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.vis_Survey_Data" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.vis_VISITA_CUSTOMER" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.vis_VISITA_NOTVISIT" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppDTModel.vis_VISITA_REGISTRO" Width="1.5" PointX="7.375" PointY="12.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
