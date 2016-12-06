@@ -1,14 +1,14 @@
 ﻿@(Html.Kendo().DropDownList()
-          .Name("visi_status")
+          .Name("visi_op")
           .DataTextField("Text")
           .DataValueField("Value")
           .BindTo(new List<SelectListItem>() {
               new SelectListItem() {
-                  Text = "Sin Prioridad",
+                  Text = "Baja",
                   Value = "0"
               },
               new SelectListItem() {
-                  Text = "Proridad",
+                  Text = "Alta",
                   Value = "1"
               }
           })

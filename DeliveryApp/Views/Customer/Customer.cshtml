@@ -24,17 +24,56 @@
           columns.Bound(c => c.cust_dir).Title("Dirección");
           columns.Bound(c => c.cust_longitud).Hidden();
           columns.Bound(c => c.cust_latitud).Hidden();
-          columns.Command(command => { command.Edit(); command.Destroy(); }).Width(180);
+          columns.Command(command => { command.Edit().Text("Editar"); command.Destroy().Text("Eliminar"); }).Width(180);
       })
       .ToolBar(toolbar =>
       {
-          toolbar.Create();
-          toolbar.Excel();
-          toolbar.Pdf();
+          toolbar.Create().Text("Nuevo");
+          toolbar.Excel().Text("");
+          toolbar.Pdf().Text("");
       })
-      .Editable(editable => editable.Mode(GridEditMode.InLine))
-      .Pageable()
-      .Filterable()
+      .Editable(editable => editable.Mode(GridEditMode.InLine).DisplayDeleteConfirmation("¿Seguro que quiere eliminar este Cliente?"))
+     .Pageable(pager => pager
+    .Messages(messages => messages
+    .Display("{0} a {1}. Total de: {2}")
+    .Empty("Sin registros")))
+      .Filterable(f => f
+            .Messages(m => m
+                .Info("Mostrar registros con:")
+                .Filter("Filtrar")
+                .Clear("Limpiar")
+                .IsTrue("y verdadero")
+                .IsFalse("y falso")
+                .And("y")
+                .Or("o")
+            )
+            .Operators(o => o
+                .ForString(fs => fs
+                    .Contains("contiene")
+                    .DoesNotContain("no contiene")
+                    .EndsWith("termina con")
+                    .IsEqualTo("es igual a")
+                    .IsNotEqualTo("no es igual a")
+                    .StartsWith("empieza con")
+                )
+                .ForNumber(fs => fs
+                    .IsEqualTo("es igual a")
+                    .IsGreaterThan("es mayor a")
+                    .IsGreaterThanOrEqualTo("es mayor o igual a")
+                    .IsLessThan("es menor que")
+                    .IsLessThanOrEqualTo("es menor o igual a")
+                    .IsNotEqualTo("no es igual a")
+                )
+                .ForDate(fs => fs
+                    .IsEqualTo("es igual a")
+                    .IsGreaterThan("es mayor a")
+                    .IsGreaterThanOrEqualTo("es mayor o igual a")
+                    .IsLessThan("es menor que")
+                    .IsLessThanOrEqualTo("es menor o igual a")
+                    .IsNotEqualTo("no es igual a")
+                )
+            )
+        )
       .Scrollable()
       .DataSource(dataSource => dataSource
           .Ajax()
@@ -43,7 +82,7 @@
           .Create(create => create.Action("CUSTOMER_Create", "Customer"))
           .Update(update => update.Action("CUSTOMER_Update", "Customer"))
           .Destroy(destroy => destroy.Action("CUSTOMER_Destroy", "Customer"))
-      )
+      ).HtmlAttributes(new { style = "height: 480px" })
         )
 
 </div>

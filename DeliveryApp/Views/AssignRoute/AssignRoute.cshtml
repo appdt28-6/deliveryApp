@@ -93,32 +93,75 @@
       .Name("grid")
       .Columns(columns =>
       {
+          columns.Bound(c => c.visi_id).Hidden();
           columns.Bound(c => c.visi_status).Hidden();
+          columns.Bound(c => c.cust_id).Hidden();
           columns.Bound(c => c.cust_name).Title("Cliente");
-          columns.Bound(c => c.inst_name).Title("Instalador");
-          columns.Bound(c => c.visi_date).Title("Fecha");
-          columns.Bound(c => c.visi_op).Title("Prioridad");
-          columns.Bound(c => c.visi_id).ClientTemplate("<input type='button' class='k-button'onclick=\"getDetails('#=visi_id#')\" value='Detalles' />")
-                .Title("");
-          //columns.Command(command => { command.Edit(); command.Destroy(); }).Width(180);
+          columns.Bound(c => c.inst_id).Hidden();
+          columns.Bound(c => c.inst_name).Title("Instalador").EditorTemplateName("_installer");
+          columns.Bound(c => c.visi_date).Title("Fecha").EditorTemplateName("DateTime");
+          columns.Bound(c => c.visi_op).Title("Prioridad").EditorTemplateName("_Prioridad").ClientTemplate("#if(visi_op==0){#Baja#}else{#Alta#}#"); ;
+          // columns.Bound(c => c.visi_id).ClientTemplate("<input type='button' class='k-button'onclick=\"getDetails('#=visi_id#')\" value='Detalles' />")
+          //  .Title("");
+          columns.Command(command => { /*command.Edit().Text("Editar");*/ command.Destroy().Text("Eliminar"); }).Width(180);
       })
       .ToolBar(toolbar =>
       {
           //toolbar.Create();
-          toolbar.Excel();
-          toolbar.Pdf();
+          toolbar.Excel().Text("Excel");
+          toolbar.Pdf().Text("PDF");
       })
-      .Editable(editable => editable.Mode(GridEditMode.InLine))
-      .Pageable()
-      .Filterable()
+      .Editable(editable => editable.Mode(GridEditMode.InLine).DisplayDeleteConfirmation("¿Seguro que quiere eliminar este visita?"))
+      .Pageable(pager => pager
+    .Messages(messages => messages
+    .Display("{0} a {1}. Total de: {2}")
+    .Empty("Sin registros")))
+      .Filterable(f => f
+            .Messages(m => m
+                .Info("Mostrar registros con:")
+                .Filter("Filtrar")
+                .Clear("Limpiar")
+                .IsTrue("y verdadero")
+                .IsFalse("y falso")
+                .And("y")
+                .Or("o")
+            )
+            .Operators(o => o
+                .ForString(fs => fs
+                    .Contains("contiene")
+                    .DoesNotContain("no contiene")
+                    .EndsWith("termina con")
+                    .IsEqualTo("es igual a")
+                    .IsNotEqualTo("no es igual a")
+                    .StartsWith("empieza con")
+                )
+                .ForNumber(fs => fs
+                    .IsEqualTo("es igual a")
+                    .IsGreaterThan("es mayor a")
+                    .IsGreaterThanOrEqualTo("es mayor o igual a")
+                    .IsLessThan("es menor que")
+                    .IsLessThanOrEqualTo("es menor o igual a")
+                    .IsNotEqualTo("no es igual a")
+                )
+                .ForDate(fs => fs
+                    .IsEqualTo("es igual a")
+                    .IsGreaterThan("es mayor a")
+                    .IsGreaterThanOrEqualTo("es mayor o igual a")
+                    .IsLessThan("es menor que")
+                    .IsLessThanOrEqualTo("es menor o igual a")
+                    .IsNotEqualTo("no es igual a")
+                )
+            )
+        )
       .Scrollable()
+     
       .DataSource(dataSource => dataSource
           .Ajax()
           .Model(model => model.Id(p => p.visi_id))
           .Read(read => read.Action("VISITA_ASSIGN_Read", "AssignRoute"))
           //.Create(create => create.Action("VISITA_ASSIGN_Create", "AssignRoute"))
           //.Update(update => update.Action("VISITA_ASSIGN_Update", "AssignRoute"))
-          //.Destroy(destroy => destroy.Action("VISITA_ASSIGN_Destroy", "AssignRoute"))
+          .Destroy(destroy => destroy.Action("VISITA_ASSIGN_Destroy", "AssignRoute"))
       ).HtmlAttributes(new { style = "height: 480px" })
         )
 
