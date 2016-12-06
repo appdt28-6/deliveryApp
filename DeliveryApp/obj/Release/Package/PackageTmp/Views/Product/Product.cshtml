@@ -1,0 +1,29 @@
+﻿
+@(Html.Kendo().Grid<DeliveryApp.Models.PRODUCTO>()
+      .Name("grid")
+      .Columns(columns =>
+      {
+        columns.Bound(c => c.prod_codigo);
+        columns.Bound(c => c.prod_name);
+        columns.Bound(c => c.prod_unidad);
+        columns.Command(command => {command.Destroy(); }).Width(180);
+      })
+      .ToolBar(toolbar => {
+            toolbar.Create();
+            toolbar.Save();
+            toolbar.Excel();
+            toolbar.Pdf();
+      })
+      .Editable(editable => editable.Mode(GridEditMode.InCell))
+      .Filterable()
+      .Scrollable()
+      .DataSource(dataSource => dataSource
+          .Ajax()
+          .Batch(true)
+          .Model(model => model.Id(p => p.prod_id))
+          .Read(read => read.Action("PRODUCTO_Read", "Product"))
+          .Create(create => create.Action("PRODUCTO_Create", "Product"))
+          .Update(update => update.Action("PRODUCTO_Update", "Product"))
+          .Destroy(destroy => destroy.Action("PRODUCTO_Destroy", "Product"))
+      )
+)

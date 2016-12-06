@@ -1,0 +1,16 @@
+﻿@(Html.Kendo().DropDownList()
+          .Name("surv_type_cuestion")
+          .DataTextField("Text")
+          .DataValueField("Value")
+          .BindTo(new List<SelectListItem>() {
+              new SelectListItem() {
+                  Text = "Abierta",
+                  Value = "A"
+              },
+              new SelectListItem() {
+                  Text = "Op Multi",
+                  Value = "O"
+              }
+          })
+          .HtmlAttributes(new { style = "width: 100%" })
+)

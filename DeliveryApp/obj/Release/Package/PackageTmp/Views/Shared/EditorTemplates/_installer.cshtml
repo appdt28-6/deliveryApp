@@ -1,0 +1,16 @@
+﻿
+    @(Html.Kendo().DropDownList()
+          .Name("inst_id")
+          .OptionLabel("Instalador...")
+          .DataTextField("inst_name")
+          .DataValueField("inst_id")
+          .DataSource(source =>
+          {
+              source.Read(read =>
+              {
+                  read.Action("GetInstaller", "AssignRoute");
+              });
+          })
+          .HtmlAttributes(new { style = "width: 100%" })
+    )
+
