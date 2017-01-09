@@ -13,8 +13,6 @@
 
 <div class="blank">
     <div class="blank-page">
-
-
         <div class="panel panel-widget forms-panel">
             <div class="forms">
                 <div class="inline-form widget-shadow">
@@ -27,7 +25,7 @@
                                 @(Html.Kendo().DropDownList()
              .Name("cust_id")
              .HtmlAttributes(new { style = "width:600px" })
-            .OptionLabel("Clientes...")
+            .OptionLabel("Visita a...")
              .DataTextField("cust_name")
              .DataValueField("cust_id")
              .DataSource(source =>
@@ -43,7 +41,7 @@
                             <div class="form-group">
                                 @(Html.Kendo().DropDownList()
           .Name("inst_id")
-          .OptionLabel("Instalador...")
+          .OptionLabel("Lo entregara...")
           .DataTextField("inst_name")
           .DataValueField("inst_id")
           .DataSource(source =>
