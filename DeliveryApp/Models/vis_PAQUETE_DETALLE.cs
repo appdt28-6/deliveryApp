@@ -12,11 +12,12 @@ namespace DeliveryApp.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class PAQUETE_DETALLE
+    public partial class vis_PAQUETE_DETALLE
     {
-        public int paqu_detail_id { get; set; }
         public int paqu_id { get; set; }
         public int prod_id { get; set; }
+        public string prod_name { get; set; }
+        public string prod_unidad { get; set; }
         public Nullable<int> prod_cant { get; set; }
         public string prod_observ { get; set; }
     }

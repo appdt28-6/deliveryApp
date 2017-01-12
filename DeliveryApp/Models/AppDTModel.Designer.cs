@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Mike\Documents\Visual Studio 2015\DeliveryApp\DeliveryApp\Models\AppDTModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Mike\Documents\Visual Studio 2015\AppDT\deliveryApp.git\trunk\DeliveryApp\Models\AppDTModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

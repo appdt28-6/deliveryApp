@@ -27,6 +27,7 @@
         <EntityTypeShape EntityType="AppDTModel.vis_VISITA_CUSTOMER" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AppDTModel.vis_VISITA_NOTVISIT" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AppDTModel.vis_VISITA_REGISTRO" Width="1.5" PointX="7.375" PointY="12.75" />
+        <EntityTypeShape EntityType="AppDTModel.vis_PAQUETE_DETALLE" Width="1.5" PointX="13.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

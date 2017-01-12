@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Buscador de Visitas";
+}
+
+<div class="banner">
+    <h2>
+        <a href="#">Asignación de Rutas</a>
+    </h2>
+</div>
+<div class="blank">
+    <div class="blank-page">
+
+        <div class="panel panel-widget forms-panel">
+            <div class="forms">
+                <div class="inline-form widget-shadow">
+                    <div class="form-title">
+                        <h4>Buscador de visitas</h4>
+                    </div>
+                    <div class="form-body">
+                        <div data-example-id="simple-form-inline">
+                            <div class="form-group">
+                            Fecha Inicio:@(Html.Kendo().DatePicker()
+        .Name("datetimepicker")
+        .Value(DateTime.Now).Format("MM/dd/yyyy")
+
+        .HtmlAttributes(new { style = "width:200px;" })
+                                )
+                            </div>
+                            <div class="form-group">
+                              Fecha Final: @(Html.Kendo().DatePicker()
+        .Name("datetimepicker2")
+        .Value(DateTime.Now).Format("MM/dd/yyyy")
+
+        .HtmlAttributes(new { style = "width:200px;" })
+        )
+                            </div>
+                            <button type="button" id="Search" name="Search" class="btn btn-default w3ls-button">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+   @(Html.Kendo().Grid<DeliveryApp.Models.sp_Busqueda_Visitas_Assign_Result>()
+      .Name("grid")
+      .Columns(columns =>
+      {
+          columns.Bound(c => c.visi_status).Hidden();
+          columns.Bound(c => c.cust_name).Title("Cliente");
+          columns.Bound(c => c.inst_name).Title("Instalador");
+          columns.Bound(c => c.visi_date).Title("Fecha");
+          columns.Bound(c => c.visi_op).Title("Prioridad");
+          columns.Bound(c => c.visi_status).Title("Estado").ClientTemplate("#if(visi_status==3){#<button class='btn btn-danger'>No efectuada</button>#}else{#<button class='btn btn-success'>efectuada</button>#}#");
+      })
+      .Pageable()
+       .DataSource(dataSource => dataSource
+          .Ajax()
+          .Model(model => model.Id(p => p.visi_id))
+          .Read(read => read.Action("VISITA_ASSIGN_Read", "SrcVisitas"))
+      ).HtmlAttributes(new { style = "height: 480px" })
+
+)
+
+
+        </div>
+</div>
+
+<script>
+   $(function () {
+        $("#Search").click(function (event) {
+            var datepicker = document.getElementById("datetimepicker").value;
+            var datepicker2 = document.getElementById("datetimepicker2").value;
+
+            $.ajax({
+               type: "POST",
+                data: { F1: datepicker, F2: datepicker2 },
+                url: '@Url.Action("VISITA_ASSIGN_Read", "SrcVisitas")',
+                dataType: 'json',
+                success: function (result) {
+                    $("#grid").data("kendoGrid").dataSource.read();
+                    $('#grid').data('kendoGrid').refresh();
+                    //alert("Activo Asignado con exito.")
+                },
+                error: function (result) {
+                    alert("error!");  //
+                }
+
+            });
+        });
+    });
+</script>

@@ -21,5 +21,6 @@ namespace DeliveryApp.Models
         public Nullable<int> visi_op { get; set; }
         public Nullable<int> visi_status { get; set; }
         public string visi_hora { get; set; }
+        public Nullable<int> paqu_id { get; set; }
     }
 }

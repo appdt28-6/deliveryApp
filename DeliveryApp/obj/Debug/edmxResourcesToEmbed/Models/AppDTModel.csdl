@@ -50,6 +50,8 @@
     <Property Name="paqu_codigo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="paqu_cantidad" Type="Int32" Nullable="false" />
     <Property Name="paqu_observ" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="paqu_fecha" Type="DateTime" Precision="3" />
+    <Property Name="paqu_status" Type="Int32" />
   </EntityType>
   <EntityType Name="PAQUETE_DETALLE">
     <Key>
@@ -58,7 +60,7 @@
     </Key>
     <Property Name="paqu_detail_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="paqu_id" Type="Int32" Nullable="false" />
-    <Property Name="prod_id" Type="Int32" />
+    <Property Name="prod_id" Type="Int32" Nullable="false" />
     <Property Name="prod_cant" Type="Int32" />
     <Property Name="prod_observ" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
   </EntityType>
@@ -149,6 +151,7 @@
     <Property Name="visi_op" Type="Int32" />
     <Property Name="visi_status" Type="Int32" />
     <Property Name="visi_hora" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="paqu_id" Type="Int32" />
   </EntityType>
   <EntityType Name="VISITA_IMAGE_NEW">
     <Key>
@@ -236,6 +239,7 @@
     <Property Name="cust_latitud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="visi_status" Type="Int32" />
     <Property Name="prioridad" Type="Int32" />
+    <Property Name="paqu_id" Type="Int32" />
   </EntityType>
   <EntityType Name="vis_VISITA_NOTVISIT">
     <Key>
@@ -293,6 +297,7 @@
       <Parameter Name="dateIni" Mode="In" Type="String" />
     </FunctionImport>
     <EntitySet Name="vis_VISITA_REGISTRO" EntityType="AppDTModel.vis_VISITA_REGISTRO" />
+    <EntitySet Name="vis_PAQUETE_DETALLE" EntityType="AppDTModel.vis_PAQUETE_DETALLE" />
   </EntityContainer>
   <ComplexType Name="sp_Busqueda_Visitas_Assign_Result">
     <Property Type="Int32" Name="visi_id" Nullable="false" />
@@ -357,5 +362,18 @@
     <Property Name="reg_ini" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="reg_end" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="reg_status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vis_PAQUETE_DETALLE">
+    <Key>
+      <PropertyRef Name="paqu_id" />
+      <PropertyRef Name="prod_id" />
+      <PropertyRef Name="prod_name" />
+    </Key>
+    <Property Name="paqu_id" Type="Int32" Nullable="false" />
+    <Property Name="prod_id" Type="Int32" Nullable="false" />
+    <Property Name="prod_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prod_unidad" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="prod_cant" Type="Int32" />
+    <Property Name="prod_observ" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

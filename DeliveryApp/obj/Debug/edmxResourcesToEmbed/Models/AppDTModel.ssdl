@@ -50,15 +50,16 @@
     <Property Name="paqu_codigo" Type="varchar" MaxLength="50" />
     <Property Name="paqu_cantidad" Type="int" Nullable="false" />
     <Property Name="paqu_observ" Type="varchar" MaxLength="150" />
+    <Property Name="paqu_fecha" Type="datetime" />
+    <Property Name="paqu_status" Type="int" />
   </EntityType>
   <EntityType Name="PAQUETE_DETALLE">
     <Key>
-      <PropertyRef Name="paqu_detail_id" />
       <PropertyRef Name="paqu_id" />
+      <PropertyRef Name="prod_id" />
     </Key>
-    <Property Name="paqu_detail_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="paqu_id" Type="int" Nullable="false" />
-    <Property Name="prod_id" Type="int" />
+    <Property Name="paqu_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prod_id" Type="int" Nullable="false" />
     <Property Name="prod_cant" Type="int" />
     <Property Name="prod_observ" Type="varchar" MaxLength="150" />
   </EntityType>
@@ -149,6 +150,7 @@
     <Property Name="visi_op" Type="int" />
     <Property Name="visi_status" Type="int" />
     <Property Name="visi_hora" Type="varchar" MaxLength="50" />
+    <Property Name="paqu_id" Type="int" />
   </EntityType>
   <EntityType Name="VISITA_IMAGE_NEW">
     <Key>
@@ -194,6 +196,21 @@ warning 6002: The table/view 'DB_A09B1F_inter.dbo.vis_Assigned_Visit' does not h
     <Property Name="cust_latitud" Type="nvarchar" MaxLength="50" />
     <Property Name="visi_op" Type="int" />
     <Property Name="visi_status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_A09B1F_inter.dbo.vis_PAQUETE_DETALLE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vis_PAQUETE_DETALLE">
+    <Key>
+      <PropertyRef Name="paqu_id" />
+      <PropertyRef Name="prod_id" />
+      <PropertyRef Name="prod_name" />
+    </Key>
+    <Property Name="paqu_id" Type="int" Nullable="false" />
+    <Property Name="prod_id" Type="int" Nullable="false" />
+    <Property Name="prod_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="prod_unidad" Type="varchar" MaxLength="5" />
+    <Property Name="prod_cant" Type="int" />
+    <Property Name="prod_observ" Type="varchar" MaxLength="150" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DB_A09B1F_inter.dbo.vis_survey' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -244,6 +261,7 @@ warning 6002: The table/view 'DB_A09B1F_inter.dbo.vis_VISITA_CUSTOMER' does not 
     <Property Name="cust_latitud" Type="nvarchar" MaxLength="50" />
     <Property Name="visi_status" Type="int" />
     <Property Name="prioridad" Type="int" />
+    <Property Name="paqu_id" Type="int" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DB_A09B1F_inter.dbo.vis_VISITA_NOTVISIT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -335,6 +353,16 @@ warning 6002: The table/view 'DB_A09B1F_inter.dbo.vis_VISITA_REGISTRO' does not 
 [vis_Assigned_Visit].[visi_status] AS [visi_status]
 FROM [dbo].[vis_Assigned_Visit] AS [vis_Assigned_Visit]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="vis_PAQUETE_DETALLE" EntityType="Self.vis_PAQUETE_DETALLE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[vis_PAQUETE_DETALLE].[paqu_id] AS [paqu_id], 
+[vis_PAQUETE_DETALLE].[prod_id] AS [prod_id], 
+[vis_PAQUETE_DETALLE].[prod_name] AS [prod_name], 
+[vis_PAQUETE_DETALLE].[prod_unidad] AS [prod_unidad], 
+[vis_PAQUETE_DETALLE].[prod_cant] AS [prod_cant], 
+[vis_PAQUETE_DETALLE].[prod_observ] AS [prod_observ]
+FROM [dbo].[vis_PAQUETE_DETALLE] AS [vis_PAQUETE_DETALLE]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="vis_survey" EntityType="Self.vis_survey" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
 [vis_survey].[surv_id] AS [surv_id], 
@@ -371,7 +399,8 @@ FROM [dbo].[vis_Survey_Data] AS [vis_Survey_Data]</DefiningQuery>
 [vis_VISITA_CUSTOMER].[cust_longitud] AS [cust_longitud], 
 [vis_VISITA_CUSTOMER].[cust_latitud] AS [cust_latitud], 
 [vis_VISITA_CUSTOMER].[visi_status] AS [visi_status], 
-[vis_VISITA_CUSTOMER].[prioridad] AS [prioridad]
+[vis_VISITA_CUSTOMER].[prioridad] AS [prioridad], 
+[vis_VISITA_CUSTOMER].[paqu_id] AS [paqu_id]
 FROM [dbo].[vis_VISITA_CUSTOMER] AS [vis_VISITA_CUSTOMER]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="vis_VISITA_NOTVISIT" EntityType="Self.vis_VISITA_NOTVISIT" store:Type="Views" store:Schema="dbo">

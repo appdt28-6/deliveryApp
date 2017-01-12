@@ -50,6 +50,8 @@
     <EntitySetMapping Name="PAQUETE">
       <EntityTypeMapping TypeName="AppDTModel.PAQUETE">
         <MappingFragment StoreEntitySet="PAQUETE">
+          <ScalarProperty Name="paqu_status" ColumnName="paqu_status" />
+          <ScalarProperty Name="paqu_fecha" ColumnName="paqu_fecha" />
           <ScalarProperty Name="paqu_id" ColumnName="paqu_id" />
           <ScalarProperty Name="paqu_codigo" ColumnName="paqu_codigo" />
           <ScalarProperty Name="paqu_cantidad" ColumnName="paqu_cantidad" />
@@ -60,7 +62,6 @@
     <EntitySetMapping Name="PAQUETE_DETALLE">
       <EntityTypeMapping TypeName="AppDTModel.PAQUETE_DETALLE">
         <MappingFragment StoreEntitySet="PAQUETE_DETALLE">
-          <ScalarProperty Name="paqu_detail_id" ColumnName="paqu_detail_id" />
           <ScalarProperty Name="paqu_id" ColumnName="paqu_id" />
           <ScalarProperty Name="prod_id" ColumnName="prod_id" />
           <ScalarProperty Name="prod_cant" ColumnName="prod_cant" />
@@ -154,6 +155,7 @@
     <EntitySetMapping Name="VISITA_ASSIGN">
       <EntityTypeMapping TypeName="AppDTModel.VISITA_ASSIGN">
         <MappingFragment StoreEntitySet="VISITA_ASSIGN">
+          <ScalarProperty Name="paqu_id" ColumnName="paqu_id" />
           <ScalarProperty Name="visi_id" ColumnName="visi_id" />
           <ScalarProperty Name="cust_id" ColumnName="cust_id" />
           <ScalarProperty Name="inst_id" ColumnName="inst_id" />
@@ -238,6 +240,7 @@
     <EntitySetMapping Name="vis_VISITA_CUSTOMER">
       <EntityTypeMapping TypeName="AppDTModel.vis_VISITA_CUSTOMER">
         <MappingFragment StoreEntitySet="vis_VISITA_CUSTOMER">
+          <ScalarProperty Name="paqu_id" ColumnName="paqu_id" />
           <ScalarProperty Name="prioridad" ColumnName="prioridad" />
           <ScalarProperty Name="visi_id" ColumnName="visi_id" />
           <ScalarProperty Name="inst_id" ColumnName="inst_id" />
@@ -345,6 +348,18 @@
           <ScalarProperty Name="inst_id" ColumnName="inst_id" />
           <ScalarProperty Name="visi_id" ColumnName="visi_id" />
           <ScalarProperty Name="reg_id" ColumnName="reg_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vis_PAQUETE_DETALLE">
+      <EntityTypeMapping TypeName="AppDTModel.vis_PAQUETE_DETALLE">
+        <MappingFragment StoreEntitySet="vis_PAQUETE_DETALLE">
+          <ScalarProperty Name="prod_observ" ColumnName="prod_observ" />
+          <ScalarProperty Name="prod_cant" ColumnName="prod_cant" />
+          <ScalarProperty Name="prod_unidad" ColumnName="prod_unidad" />
+          <ScalarProperty Name="prod_name" ColumnName="prod_name" />
+          <ScalarProperty Name="prod_id" ColumnName="prod_id" />
+          <ScalarProperty Name="paqu_id" ColumnName="paqu_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

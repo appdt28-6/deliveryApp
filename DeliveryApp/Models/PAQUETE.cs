@@ -18,5 +18,7 @@ namespace DeliveryApp.Models
         public string paqu_codigo { get; set; }
         public int paqu_cantidad { get; set; }
         public string paqu_observ { get; set; }
+        public Nullable<System.DateTime> paqu_fecha { get; set; }
+        public Nullable<int> paqu_status { get; set; }
     }
 }

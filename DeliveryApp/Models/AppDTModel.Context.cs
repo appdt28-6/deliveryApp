@@ -50,6 +50,7 @@ namespace DeliveryApp.Models
         public DbSet<vis_VISITA_CUSTOMER> vis_VISITA_CUSTOMER { get; set; }
         public DbSet<vis_VISITA_NOTVISIT> vis_VISITA_NOTVISIT { get; set; }
         public DbSet<vis_VISITA_REGISTRO> vis_VISITA_REGISTRO { get; set; }
+        public DbSet<vis_PAQUETE_DETALLE> vis_PAQUETE_DETALLE { get; set; }
     
         public virtual ObjectResult<sp_Busqueda_Visitas_Assign_Result> sp_Busqueda_Visitas_Assign(string dateIni, string dateEnd)
         {

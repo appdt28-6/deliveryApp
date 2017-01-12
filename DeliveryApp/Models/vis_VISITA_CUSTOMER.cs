@@ -26,5 +26,6 @@ namespace DeliveryApp.Models
         public string cust_latitud { get; set; }
         public Nullable<int> visi_status { get; set; }
         public Nullable<int> prioridad { get; set; }
+        public Nullable<int> paqu_id { get; set; }
     }
 }

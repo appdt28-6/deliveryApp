@@ -162,8 +162,10 @@
     <Compile Include="Controllers\NotVisitController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SetLoginInstallerController.cs" />
+    <Compile Include="Controllers\SetPakageController.cs" />
     <Compile Include="Controllers\SetSurveyController.cs" />
     <Compile Include="Controllers\SetVisitInstallerController.cs" />
+    <Compile Include="Controllers\SrcVisitasController.cs" />
     <Compile Include="Controllers\SurveyController.cs" />
     <Compile Include="Controllers\SurveyDataController.cs" />
     <Compile Include="Controllers\VisitasController.cs" />
@@ -248,6 +250,9 @@
       <DependentUpon>AppDTModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\vis_Assigned_Visit.cs">
+      <DependentUpon>AppDTModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vis_PAQUETE_DETALLE.cs">
       <DependentUpon>AppDTModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\vis_survey.cs">
@@ -414,6 +419,7 @@
     <Content Include="Views\Shared\EditorTemplates\_Role.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\_TypeCuestion.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\SrcVisitas\SrcVisitas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
@@ -424,6 +430,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\SetPakage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
